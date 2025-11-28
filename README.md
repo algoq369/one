@@ -1,4 +1,4 @@
-# The Impossibility of Coincidence
+# One
 ## When Patterns Speak Across Time and Space
 
 *A Simple Map of the Soul's Return Through the Great Traditions*
@@ -86,4 +86,3 @@ This work is a synthesis of universal wisdom traditions. Use it with respect and
 ---
 
 *"All truths are but facets of the One Truth. All paths lead through the heart. All dimensions open through chakra alignment."*
-

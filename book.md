@@ -1,4 +1,4 @@
-# The Impossibility of Coincidence
+# One
 ## When Patterns Speak Across Time and Space
 
 *A Simple Map of the Soul's Return Through the Great Traditions*
@@ -193,7 +193,7 @@ The same truth.
 
 ---
 
-### The Impossibility of Coincidence
+### One
 
 When we combine these two mysteries—
 
@@ -926,7 +926,7 @@ They are not in conflict. They are refractions of the same One Light across diff
 
 ---
 
-### The Impossibility of Coincidence
+### One
 
 When we see:
 
