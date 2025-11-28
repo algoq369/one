@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>One - Interactive Mind Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        .mindmap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .node {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            font-weight: bold;
+        }
+        .node:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        .node.main {
+            font-size: 1.8em;
+            padding: 20px 40px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        .node.part {
+            font-size: 1.3em;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        .node.section {
+            font-size: 1em;
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+        .node.subsection {
+            font-size: 0.9em;
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            padding: 10px 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 20px;
+        }
+        .connector {
+            width: 2px;
+            height: 30px;
+            background: #34495e;
+            margin: 0 auto;
+        }
+        .details {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            display: none;
+        }
+        .details.active {
+            display: block;
+        }
+        .details h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .details ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .details li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .details li:before {
+            content: "→ ";
+            color: #667eea;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ONE</h1>
+        <p class="subtitle">When Patterns Speak Across Time and Space</p>
+        
+        <div class="mindmap">
+            <!-- Main Node -->
+            <div class="node main" onclick="showDetails('main')">ONE</div>
+            <div class="connector"></div>
+            
+            <!-- Part I: Foundation -->
+            <div class="row">
+                <div class="column">
+                    <div class="node part" onclick="showDetails('part1')">Part I: Foundation</div>
+                    <div class="connector"></div>
+                    <div class="row">
+                        <div class="node section" onclick="showDetails('physical')">Physical</div>
+                        <div class="node section" onclick="showDetails('astral')">Astral</div>
+                        <div class="node section" onclick="showDetails('mental')">Mental</div>
+                        <div class="node section" onclick="showDetails('monad')">Monad</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Part II: Mathematical Blueprint -->
+            <div class="row">
+                <div class="column">
+                    <div class="node part" onclick="showDetails('part2')">Part II: Mathematical Blueprint</div>
+                    <div class="connector"></div>
+                    <div class="row">
+                        <div class="node subsection">Fine-Tuning</div>
+                        <div class="node subsection">Fibonacci</div>
+                        <div class="node subsection">Golden Ratio</div>
+                        <div class="node subsection">Sacred Numbers</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Part III: Integration -->
+            <div class="row">
+                <div class="column">
+                    <div class="node part" onclick="showDetails('part3')">Part III: Integration</div>
+                    <div class="connector"></div>
+                    <div class="row">
+                        <div class="column">
+                            <div class="node section" onclick="showDetails('gates')">34 Gates</div>
+                            <div class="connector"></div>
+                            <div class="row">
+                                <div class="node subsection">33 Vertebrae</div>
+                                <div class="node subsection">7 Chakras</div>
+                                <div class="node subsection">12 Meridians</div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="node section" onclick="showDetails('frequencies')">Frequencies</div>
+                            <div class="connector"></div>
+                            <div class="row">
+                                <div class="node subsection">Word</div>
+                                <div class="node subsection">Vibration</div>
+                                <div class="node subsection">Sigils</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Part IV: Return -->
+            <div class="row">
+                <div class="column">
+                    <div class="node part" onclick="showDetails('part4')">Part IV: Return</div>
+                    <div class="connector"></div>
+                    <div class="row">
+                        <div class="node section">Unity</div>
+                        <div class="node section">Heart Bridge</div>
+                        <div class="node section">Chakra Alignment</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Details Panel -->
+        <div class="details" id="details">
+            <h3 id="details-title">Select a node to see details</h3>
+            <ul id="details-content"></ul>
+        </div>
+    </div>
+    
+    <script>
+        const detailsMap = {
+            'main': {
+                title: 'ONE - The Core',
+                content: [
+                    'Synthesis of universal wisdom traditions',
+                    'The impossibility of coincidence',
+                    'Map of the soul's return',
+                    '34-fold path to the Monad'
+                ]
+            },
+            'part1': {
+                title: 'Part I: The Foundation',
+                content: [
+                    'Four Realms of Being',
+                    'Physical - The Forgotten Temple',
+                    'Astral - The Realm of Reflection',
+                    'Mental - The Architect of Reality',
+                    'Monad - The Silent Flame'
+                ]
+            },
+            'physical': {
+                title: 'Physical Plane',
+                content: [
+                    'World of embodiment',
+                    'Body as temple',
+                    '33 vertebrae structure',
+                    'Gates 1-7 (Root to Sacral)'
+                ]
+            },
+            'astral': {
+                title: 'Astral Plane',
+                content: [
+                    'Emotional body and dreamworld',
+                    'Realm of reflection',
+                    'Gates 8-18 (Sacral to Heart)',
+                    'Battlefield of the initiate'
+                ]
+            },
+            'mental': {
+                title: 'Mental Plane',
+                content: [
+                    'Realm of divine mind',
+                    'Architect of reality',
+                    'Gates 19-31 (Heart to Third Eye)',
+                    'Mathematical precision meets spiritual truth'
+                ]
+            },
+            'monad': {
+                title: 'The Monad',
+                content: [
+                    'The Silent Flame',
+                    'Origin and destination',
+                    'Gate 34 (Crown Chakra)',
+                    'Union with Source'
+                ]
+            },
+            'part2': {
+                title: 'Part II: Mathematical Blueprint',
+                content: [
+                    'Fine-tuning argument',
+                    'Fibonacci sequence in nature',
+                    'Golden ratio (Phi)',
+                    'Sacred numbers and patterns',
+                    'Mathematics as divine signature'
+                ]
+            },
+            'part3': {
+                title: 'Part III: The Path of Integration',
+                content: [
+                    'The 34 Gates of Becoming',
+                    'Frequencies of Creation',
+                    'Anatomical correlations',
+                    'Word, vibration, and form'
+                ]
+            },
+            'gates': {
+                title: 'The 34 Gates',
+                content: [
+                    '33 Vertebrae + 1 Monad = 34',
+                    '7 Chakras = 7 Gate Clusters',
+                    '12 Meridians = 12 Pathways',
+                    '365+ Points = Nodes of Activation',
+                    'Physical (1-7), Astral (8-18), Mental (19-31), Monad (34)'
+                ]
+            },
+            'frequencies': {
+                title: 'Frequencies of Creation',
+                content: [
+                    'The Mystery of the Word',
+                    'Language as divine technology',
+                    'Hebrew, Arabic, Aramaic',
+                    'Word = Vibration = Form',
+                    'Sigils: Language of symbolic fire'
+                ]
+            },
+            'part4': {
+                title: 'Part IV: The Return',
+                content: [
+                    'Unity of all traditions',
+                    'The impossibility of coincidence',
+                    'Heart: Bridge between realms',
+                    'Chakra alignment as final goal',
+                    'Dimensional ascension'
+                ]
+            }
+        };
+        
+        function showDetails(key) {
+            const details = document.getElementById('details');
+            const title = document.getElementById('details-title');
+            const content = document.getElementById('details-content');
+            
+            if (detailsMap[key]) {
+                details.classList.add('active');
+                title.textContent = detailsMap[key].title;
+                content.innerHTML = detailsMap[key].content.map(item => 
+                    '<li>' + item + '</li>'
+                ).join('');
+            }
+        }
+    </script>
+</body>
+</html>
