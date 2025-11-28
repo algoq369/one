@@ -75,6 +75,8 @@ The path is not out there. It is in here—in your body, in your breath, in your
 ## File Structure
 
 - `book.md` - The complete book in Markdown format
+- `book.pdf` - PDF version of the book (32 pages)
+- `book.html` - HTML version for web viewing
 - `README.md` - This file
 
 ---
