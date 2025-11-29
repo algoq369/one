@@ -72,12 +72,35 @@ The path is not out there. It is in here—in your body, in your breath, in your
 
 ---
 
-## File Structure
+## Books
 
-- `book.md` - The complete book in Markdown format
-- `book.pdf` - PDF version of the book (32 pages)
-- `book.html` - HTML version for web viewing
-- `README.md` - This file
+### Book One: The Complete Map
+- **`book.md`** - The complete book in Markdown format (1,658 lines)
+- **`book.pdf`** - PDF version of the book
+- **`book.html`** - HTML version for web viewing
+
+**Book One** is a detailed exploration of:
+- The Four Cosmic Realms (Physical, Astral, Mental, Monad)
+- The 34 Gates of Becoming with complete anatomical correlations
+- The Mathematics of Creation (Fibonacci, Golden Ratio, Fine-Tuning)
+- Frequencies of Creation (Sacred Word, Number, and Sigil)
+- Macrocosm-Microcosm Correlations (Cosmos → Body)
+- Synthesis of 20+ spiritual traditions
+
+### Book Two: The Proof (3 Pages)
+- **`book2.md`** - The 3-page presentation in Markdown format
+- **`book2.pdf`** - PDF version
+- **`book2.html`** - HTML version
+
+**Book Two** is a concise presentation focusing on:
+- **Page 1**: Real-Life Facts (Mathematical, Anatomical, Cosmic)
+- **Page 2**: Esoteric Facts (Traditions, Symbols, Consciousness)
+- **Page 3**: The Bridge (How They Connect, The Proof)
+
+## Additional Resources
+
+- **`mindmap.md`** - Text-based mindmap of the book structure
+- **`mindmap.html`** - Interactive HTML mindmap
 
 ---
 
