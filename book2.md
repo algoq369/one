@@ -1,9 +1,9 @@
 # One: Book Two
 ## When Patterns Speak Across Time and Space
+
 *A Detailed Map of the Soul's Return Through the Great Traditions*
 
 *This is the comprehensive exploration. For a 3-page introduction to the macrocosm-microcosm connections, see Book One.*
-*A Simple Map of the Soul's Return Through the Great Traditions*
 
 ---
 
