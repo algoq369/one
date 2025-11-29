@@ -60,7 +60,21 @@
      - Hebrew
      - Arabic
      - Aramaic & Assyrian
+   - The Threefold Nature of Sacred Letters
+     - The Sound of Letters: Vibration Creates Form
+     - The Form of Letters: Geometry as Vibration Made Visible
+     - The Bouba-Kiki Effect: Universal Sound-Form Correlation
    - Word = Vibration = Form
+   - The Octave Principle: The Universal 2:1 Ratio
+   - DNA as Music: The Scientific Translation
+   - The Earth-Human Resonance: Schumann Frequency
+   - 528 Hz: The DNA Repair Frequency
+   - The Cosmic Sound: From Big Bang to Your Body
+   - The Synthesis: Sound, DNA, and Universe
+   - Speaking Creates Reality: The Vibration → Form Principle
+   - The Complete Correlation: Sound + Form + Number = Manifestation
+   - The Practical Application: How You Create as You Speak
+   - The Final Synthesis: The Power of the Spoken Word
    - The Secret of Numbers
    - Sigils: The Language of Symbolic Fire
      - Sigils in Ancient Use
